@@ -2,11 +2,11 @@ from pathlib import Path
 
 from lxml import html as lxml_html
 
-from downloader import Url, Html, ProcessPageResult, download_all_pages
+from scraper import Url, Html, ProcessPageResult, download_all_pages
 
 
 INITIAL_PAGE_URL = 'https://www.giantitp.com/comics/oots0001.html'
-OUTPUT_DIR = Path(__file__).resolve().parent / 'OrderOfTheStick'
+OUTPUT_DIR = Path(__file__).resolve().parent / 'downloads' / 'OrderOfTheStick'
 
 
 def process_page(page: Url, html: Html) -> ProcessPageResult:
